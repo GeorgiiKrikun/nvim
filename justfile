@@ -13,7 +13,7 @@ install-neovim:
   mkdir -p ${HOME}/Downloads
   mv nvim-linux-x86_64.tar.gz ${HOME}/Downloads
   sudo rm -rf /opt/nvim
-  sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+  sudo tar -C /opt -xzf ${HOME}/Downloads/nvim-linux-x86_64.tar.gz
 
 setup-path:
   echo 'export PATH=$PATH:/opt/nvim/bin' >> ~/.bashrc
