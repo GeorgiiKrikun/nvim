@@ -11,10 +11,9 @@ install-ripgrep:
 install-neovim:
   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
   mkdir -p ${HOME}/Downloads
-  mv nvim-linux-x86_64.tar.gz ${HOME}/Downloads
+  mv nvim-linux-x86_64.tar.gz ${HOME}/Downloads/nvim.tar.gz
   sudo rm -rf /opt/nvim
-  sudo tar -C /opt -xzf ${HOME}/Downloads/nvim-linux-x86_64.tar.gz
-
+  sudo tar -C /opt -xzf ${HOME}/Downloads/nvim.tar.gz
 setup-path:
   echo 'export PATH=$PATH:/opt/nvim/bin' >> ~/.bashrc
   source ~/.bashrc
